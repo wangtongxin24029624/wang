@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Copper Cup — a fictional neighbourhood café concept for coffee, quiet breaks and fresh bakes.">
+  <title>Copper Cup | A little pause, well made.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Internal links match the section IDs below. -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Copper Cup home"><span class="brand-mark" aria-hidden="true">C.</span> COPPER CUP</a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#menu">Menu</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy"><p class="eyebrow">COFFEE. COMPANY. A MOMENT FOR YOU.</p>
+        <h1>A little pause,<br><em>well made.</em></h1>
+        <p class="intro">Step away from the rush. Find your favourite cup, something freshly baked, and a little room to slow down.</p>
+        <a class="button" href="#menu">Find your daily favourite <span aria-hidden="true">↗</span></a>
+        <p class="small hero-note">A neighbourhood café concept · Made for everyday moments</p>
+      </div>
+      <figure class="hero-art"><img src="assets/latte.png" alt="Original illustration of a cream ceramic cup filled with a warm latte" width="1000" height="800"><figcaption><span>THE EVERYDAY CLASSIC</span><span>Slow mornings. Warm cups.</span></figcaption></figure>
+    </section>
+    <div class="values-strip" aria-label="Our café values"><span>01 / Thoughtful coffee</span><span>02 / Freshly baked comfort</span><span>03 / Space to slow down</span></div>
+    <section id="about" class="section-wrap about-section">
+      <div><p class="eyebrow">A SMALL PLACE. A SIMPLE IDEA.</p><h2>Your day deserves<br>a softer start.</h2></div>
+      <div><p>Copper Cup is a fictional café designed around the small breaks that make a busy day better. Think coffee before class, a catch-up after work, or a quiet corner with a good book.</p><p>Our concept keeps things simple: a short menu, welcoming spaces and familiar flavours worth coming back to.</p>
+      <div class="values"><div><span class="icon" aria-hidden="true">☕</span><h3>Care in every cup</h3><p>A small menu, made thoughtfully.</p></div><div><span class="icon" aria-hidden="true">✦</span><h3>A warm welcome</h3><p>Come on your own or bring a friend.</p></div><div><span class="icon" aria-hidden="true">◷</span><h3>Take your time</h3><p>A pause between the busy parts.</p></div></div></div>
+    </section>
+    <section id="menu" class="menu-section"><div class="section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">THE SHORTLIST</p><h2>Good things, simply made.</h2></div><p>Coffee classics & a little something sweet.<br><span class="small">Illustrative menu · Prices in MYR</span></p></div>
+      <div class="menu-grid">
+        <article class="menu-item"><img src="assets/latte.png" alt="Illustrated hot latte in a ceramic cup" width="1000" height="800" loading="lazy"><div class="item-title"><h3>House Latte</h3><span>RM 12</span></div><p>Espresso and warm milk, with a soft, creamy finish.</p><span class="tag">WARM & COMFORTING</span></article>
+        <article class="menu-item"><img src="assets/iced-coffee.png" alt="Illustrated iced coffee in a tall glass with a green straw" width="1000" height="800" loading="lazy"><div class="item-title"><h3>Iced Coffee</h3><span>RM 11</span></div><p>Chilled coffee over ice for a refreshing afternoon pause.</p><span class="tag">COOL & EASYGOING</span></article>
+        <article class="menu-item"><img src="assets/croissant.png" alt="Illustrated golden croissant served on a cream plate" width="1000" height="800" loading="lazy"><div class="item-title"><h3>Butter Croissant</h3><span>RM 8</span></div><p>Golden layers and a buttery centre. Lovely with your coffee.</p><span class="tag">FLAKY & GOLDEN</span></article>
+      </div>
+    </div></section>
+    <section class="section-wrap film-section" aria-labelledby="film-heading">
+      <div><p class="eyebrow">A MOMENT IN MOTION</p><h2 id="film-heading">The art of<br>taking a break.</h2><p>A short illustrated coffee ritual:<br>choose a cup, take a breath, enjoy the pause.</p><p class="small">12-second original animation · No audio<br>Use the player controls to play or pause.</p></div>
+      <figure><video controls playsinline preload="metadata" poster="assets/latte.png" aria-label="A twelve-second illustrated coffee ritual"><source src="assets/coffee-ritual.webm" type="video/webm">Your browser does not support this video. <a href="assets/coffee-ritual.webm">Download the coffee ritual video.</a></video><figcaption>CHOOSE YOUR CUP. TAKE A BREATH. ENJOY THE PAUSE.</figcaption></figure>
+    </section>
+    <section id="contact" class="contact-section"><div class="section-wrap contact-grid">
+      <div><p class="eyebrow">LET'S TALK COFFEE</p><h2>Say hello.<br>Stay a while.</h2><p>Have a menu question or an idea for the café?<br>Try our sample enquiry form.</p><dl><dt>Concept opening hours</dt><dd>Monday–Saturday · 8:00 am–6:00 pm</dd><dt>Location concept</dt><dd>A neighbourhood near campus, Malaysia</dd></dl><p class="small">Copper Cup is a fictional student design concept.<br>No physical shop or booking service is represented.</p></div>
+      <!-- Display-only contact form: no backend and no data submission. -->
+      <form aria-labelledby="form-heading"><h3 id="form-heading">Leave a little note</h3><p id="form-note" class="small">Demonstration only. This form does not send or save messages.</p><div class="form-row"><div><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Tan"></div><div><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com"></div></div><label for="topic">What's on your mind?</label><select id="topic" name="topic"><option>Menu enquiry</option><option>General feedback</option><option>Something else</option></select><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell us a little more..."></textarea><button type="button" disabled aria-describedby="form-note">Send message · Demo only</button></form>
+    </div></section>
+  </main>
+  <footer class="section-wrap"><a class="brand" href="#home">COPPER CUP</a><p>A little pause, well made.</p><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
